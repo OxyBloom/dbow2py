@@ -14,5 +14,5 @@ add_subdirectory(DBoW2)  # Make sure DBoW2 is cloned here or adjust path
 pybind11_add_module(dbow2py bindings/pybind_interface.cpp)
 target_link_libraries(dbow2py PRIVATE ${OpenCV_LIBS} DBoW2)
 
-add_executable(test_vocab test_vocab.cpp)
-target_link_libraries(test_vocab DBoW2 ${OpenCV_LIBS})
+#add_executable(test_vocab test_vocab.cpp)
+#target_link_libraries(test_vocab DBoW2 ${OpenCV_LIBS})
